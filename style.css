@@ -86,10 +86,17 @@ img:not([alt]) {
 
 /* 共通 */
 
+section:nth-of-type(n+2){
+    padding: 90px;
+}
+
+section:nth-child(even){
+    background-color: #ECEFF1;
+}
+
 .container{
     width: 1024px;
     margin: 0 auto;
-    padding: 90px 0;
 }
 
 .heading{
@@ -120,6 +127,10 @@ img:not([alt]) {
     padding-bottom: 5px;
 }
 
+.discription-text{
+    padding-bottom: 20px;
+}
+
 .left{
     float: left;
 }
@@ -128,9 +139,8 @@ img:not([alt]) {
     float: right;
 }
 
-
 .clearfix::after {
-    content: “”;
+    content: "";
     display: block;
     clear: both;
     }
@@ -188,10 +198,6 @@ header .logo{
 }
 
 /* ポートフォリオ */
-.portfolio{
-    background-color: #ECEFF1;
-}
-
 .portfolio-wrapper{
     width: 920px;
     margin: 0 auto;
@@ -208,7 +214,7 @@ header .logo{
 .feature-wrapper{
     width: 980px;
     margin: 0 auto;
-
+   
 }
 .feature-box{
     width: 320px;
@@ -238,11 +244,6 @@ header .logo{
 }
 
 /* プロフィール */
-.profile{
-    background-color: #ECEFF1;
-}
-
-
 .profile-wrapper{
     width: 1024px;
     margin: 0 auto;
@@ -262,4 +263,35 @@ header .logo{
 }
 
 /* コンタクト */
+.contact-wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
 
+.contact-box{
+    width: 50%;
+    padding: 0 100px;
+}
+
+.sns-icon{
+    font-size: 50px;
+}
+
+.sns-icon i{
+    margin-right: 20px;
+}
+.sns-icon i:last-child{
+    margin-right: 0;
+}
+
+/* フッター */
+
+footer{
+    height: 60px;
+    width: 100%;
+    background-color: #EC715F;
+    color: #fafafa;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+}
